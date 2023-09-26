@@ -18,7 +18,8 @@ main{
 .goals,
 .aplications,
 .team,
-.outputs{
+.outputs,
+.terapeuts{
 
     width: 1240px;
     max-width: 100%;
@@ -115,6 +116,7 @@ main{
 
 .goals-main-text{
     font-size: 22px;
+    color: #000;
 }
 
 .goals-grant-text{
@@ -228,6 +230,11 @@ main{
     margin-top: 0px;
     margin-bottom: 30px;
     font-size: 18px;
+}
+
+.terapeuts p{
+    font-size: 22px;
+    color: #000;
 }
 
 footer{
