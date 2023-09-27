@@ -253,6 +253,10 @@ main{
     font-size: 18px;
 }
 
+.contact{
+    text-align: center;
+}
+
 .terapeuts p{
     font-size: 22px;
     color: #000;
