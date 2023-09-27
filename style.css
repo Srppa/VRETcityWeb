@@ -43,10 +43,19 @@ header{
     height: 75px;
 }
 
+.logo-brainvr img {
+    height: 75px;
+}
+
 .logo-nudz{
     height: 65px;
     margin-left: 10px;
 }
+
+.logo-nudz img {
+    height: 65px;
+}
+
 
 .nav-bar{
     display: flex;
@@ -123,6 +132,12 @@ main{
     font-size: 16px;
 }
 
+.stimulus-carousel p {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
 .slick-prev:before,
 .slick-next:before {
     color: #2C3161 !important;
@@ -146,7 +161,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 }
 
 .scenario-cont{
@@ -172,23 +187,29 @@ main{
 }
 
 .scenario-cont .text-cont p{
+    display: none;
     margin-top: 5px;
     margin-bottom: 0px;
 }
 
 .team-cont{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .member{
     width: 25%;
-    margin: 0 10px;
     text-decoration: none;
     color: #000;
 }
 
 .member img{
-    max-width: 100%;
+    max-width: 95%;
+}
+
+.outputs a{
+    color: #2C3161;
 }
 
 .outputs-subcategory{
@@ -255,11 +276,17 @@ footer{
     margin-bottom: 25px;
 }
 
+.cvut{
+    max-width: 300px;
+}
+
 .bottom-footer{
     background-color: #2C3161;
     padding: 25px 0;
     color: #fff;
 }
+
+
 
 .bottom-footer{
     
