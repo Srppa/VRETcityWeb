@@ -132,6 +132,17 @@ main{
     font-size: 16px;
 }
 
+.goals-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goals-logos .tacr{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 .stimulus-carousel p {
     font-size: 25px;
     margin-top: 10px;
@@ -167,6 +178,18 @@ main{
 .scenario-cont{
     width: 47%;
     margin: 0 15px 20px 0;
+}
+
+.scenario-cont-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scenario-cont-header .arrow{
+    width: 20px;
+    margin-right: 5px;
 }
 
 .scenario-cont img{
@@ -209,7 +232,21 @@ main{
 }
 
 .outputs a{
+    text-decoration: none;
+}
+
+.outputs a .publication-name{
     color: #2C3161;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.outputs a .publication-header{
+    color: #3c3539;
+    font-size: 16px;
+    margin-top: 0px;
+
 }
 
 .outputs-subcategory{
