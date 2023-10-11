@@ -39,23 +39,34 @@ header{
     align-items: center;
 }
 
-.logo-brainvr {
-    height: 75px;
+header .logo-brainvr {
+    height: 70px;
 }
 
-.logo-brainvr img {
-    height: 75px;
+header .logo-brainvr img {
+    height: 70px;
 }
 
-.logo-nudz{
+header .logo-nudz{
     height: 65px;
     margin-left: 10px;
 }
 
-.logo-nudz img {
+header .logo-nudz img {
     height: 65px;
 }
 
+header .nav-bar .logos{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+header .nav-bar .logos > a{
+    margin-left: 13px;
+    
+}
 
 .nav-bar{
     display: flex;
@@ -231,6 +242,7 @@ main{
 
 .member img{
     max-width: 95%;
+    width: 95%;
 }
 
 .outputs a{
@@ -286,10 +298,18 @@ main{
     font-size: 22px;
 }
 
-.team p{
+.team .member-name{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.team .member-role{
     margin-top: 0px;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 15px;
+    color: #2C3161;
+    font-style: italic;
 }
 
 .contact{
@@ -315,8 +335,24 @@ footer{
     padding: 25px 0;
 }
 
-.top-footer > img{
+.top-footer > a > img{
     margin-bottom: 25px;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.top-footer .logo-brainvr{
+    margin-top: 20px;
+    width: 190px;
+}
+.top-footer .logo-nudz{
+    width: 220px;
+}
+.top-footer .logo-cvut{
+    width: 300px;
+}
+.top-footer .logo-tacr{
+    width: 220px;
 }
 
 .cvut{
