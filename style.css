@@ -23,6 +23,10 @@ main{
 
     width: 1240px;
     max-width: 100%;
+
+    box-sizing: border-box;
+    padding: 0 15px;
+
 }
 
 h1, h2{
@@ -41,6 +45,7 @@ header{
 
 header .logo-brainvr {
     height: 70px;
+    margin-left: 0 !important;
 }
 
 header .logo-brainvr img {
@@ -74,6 +79,7 @@ header .nav-bar .logos > a{
     justify-content: space-between;
 
     padding: 12px 20px;
+    box-sizing: border-box;
 }
 
 .menu{
@@ -135,12 +141,12 @@ main{
 }
 
 .goals-main-text{
-    font-size: 22px;
+    font-size: 20px;
     color: #000;
 }
 
 .goals-grant-text{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .goals-logos{
@@ -184,13 +190,13 @@ main{
 .scenarios{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: start;
 }
 
 .scenario-cont{
-    width: 47%;
-    margin: 0 15px 20px 0;
+    width: 49%;
+    margin-bottom: 15px;
 }
 
 .scenario-cont-header{
