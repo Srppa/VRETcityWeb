@@ -233,6 +233,27 @@
                     </a>
                 </div>
             </div>
+
+
+            <div class="outputs-subcategory">
+                <a id="toolsButton" class="subcategory-header">
+                    <h3>Nástroje</h3>
+                    <img class="arrow" src="images/arrow.png"/>
+                </div>
+                <div id="toolsText" class="subcategory-list">
+                    <a href="documents/VRETcity-fyzioSW2023.pptx.pdf" target="_blank" class="publications">
+                        <p class="publication-name">Application for cognitive load assessment</p>
+                        <p class="publication-header">Hejda J, Sokol M, Kutílek P, Francová A, Fajnerová I</p>
+                        
+                    </a>
+                    <a href="documents/VRETcity-SW2023.pptx.pdf" target="_blank" class="publications">
+                        <p class="publication-name">VRETcity</p>
+                        <p class="publication-header">Fajnerová I, Francová A, Jablonská M K, Husák J, Stejskal J, Kotek M</p>
+                    </a>
+                </div>
+            </div>
+
+
         </section>
         <section id="Contact" class="contact">
             <h2>Kontakty</h2>
@@ -272,7 +293,12 @@
                 $( "#aplOutputsText" ).slideToggle( "slow", function() {
                     $( "#aplOutputsButton > img").toggleClass( "rotated" )
                 });
+            });
 
+            $( "#toolsButton" ).on( "click", function() {
+                $( "#toolsText" ).slideToggle( "slow", function() {
+                    $( "#aplOutputsButton > img").toggleClass( "rotated" )
+                });
             });
 
             $( ".scenario-cont" ).on( "click", function() {

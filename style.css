@@ -280,6 +280,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .subcategory-header h3 {
