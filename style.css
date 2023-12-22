@@ -328,6 +328,173 @@ main{
     color: #000;
 }
 
+.form-info{
+    margin-bottom: 40px;
+}
+
+.form-show{
+    padding: 15px 20px;
+
+    
+    font-size: 20px;
+
+    background-color: #2C3161;
+    border-radius: 5px;
+
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.registration{
+    display: none;
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.terapeuts .requiredAsterix{
+    margin-left: 2px;
+    color: #ba0606;
+}
+
+.names-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first-name-cont,
+.last-name-cont {
+    width: 49%;
+}
+
+.names-cont input{
+    width: 100%;
+}
+
+.names-cont label{
+    text-align: left;
+    color: #000;
+}
+
+.registration label{
+    font-weight: 700;
+}
+
+.registration label,
+.registration input,
+.registration select,
+.registration textarea{
+    display: block;
+
+    width: 100%;
+    
+    box-sizing: border-box;
+
+    font-size: 18px;
+    color: #000;
+}
+
+.registration label{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    
+}
+
+.registration input,
+.registration select,
+.registration textarea{
+    padding: 10px;
+    border-radius: 0;
+    border: 3px solid #2C3161;
+    background-color: #fff;
+}
+
+.registration select{
+    appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% + 0px);
+    background-position-y: 0.5px;
+}
+
+.pi-cont{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    max-width: 100%;
+    margin: 25px auto 0 auto;
+}
+
+.pi-cont label{
+    margin: 0;
+    padding-left: 10px;
+}
+
+.pi-cont input[type="checkbox"]{
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+.pi-cont input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #2C3161;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
+.registration textarea{
+    height: 80px;
+    resize: vertical
+}
+
+.registration .form-submit{
+    height: auto;
+    width: 200px;
+
+    margin: 30px 0 0 auto;
+
+    background-color: #2C3161;
+    color: #fff;
+
+    border: none;
+    border-radius: 12px;
+    padding: 15px 0;
+}
+
+.registraion-complete{
+    display: none;
+    margin-top: 30;
+}
+
+.registraion-complete p{
+    font-size: 18px;
+}
+
+
 footer{
     margin-top: 100px;
     width: 100%;
