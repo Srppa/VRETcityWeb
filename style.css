@@ -78,7 +78,7 @@ header .nav-bar .logos > a{
 
     justify-content: space-between;
 
-    padding: 12px 20px;
+    padding: 20px 20px;
     box-sizing: border-box;
 }
 
@@ -108,7 +108,7 @@ header .nav-bar .logos > a{
 .title-card{
     width: 100%;
 
-    padding: 240px 0;
+    padding: 190px 0;
 
     background-size: cover;
 
@@ -544,6 +544,16 @@ footer{
 .bottom-footer{
     
 }
+
+.flag{
+    margin-left: 5px;
+    display: flex;
+}
+
+.flag > img{
+    width: 20px
+}
+
 
 .rotated {
     transform: rotate(180deg);
