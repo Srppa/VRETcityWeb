@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <title>VRETcity - BRAINVR</title>
     <meta name="description" content="Web for VRETcity project">
@@ -10,63 +11,98 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-        crossorigin="anonymous"></script>
-    
-    
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
     <header>
         <div class="nav-bar">
             <div class="logos">
-                <a href="https://brainvr.cz/" target="_blank" class="logo-brainvr">
-                    <img  src="images/logo-brainvr.png"/>
-                </a>
-                <a href="https://www.nudz.cz/" target="_blank" class="logo-nudz">
-                    <img  src="images/logo-nudz.png"/>
-                </a>
-                <a href="https://www.ciirc.cvut.cz/cs/" target="_blank" class="logo-nudz">
-                    <img class="logos cvut" src="images/logo-CIIRC.svg"/>
-                </a>
-                <a href="https://www.tacr.cz/" target="_blank" class="logo-nudz">
-                    <img class="logos tacr" src="images/logo-tacr.png"/>
-                </a>
+                <div class="logos-half-one">
+                    <a href="https://brainvr.cz/" target="_blank" class="logo-brainvr">
+                        <img src="images/logo-brainvr.png" />
+                    </a>
+                    <a href="https://www.nudz.cz/" target="_blank" class="logo-nudz">
+                        <img src="images/logo-nudz.png" />
+                    </a>
+                </div>
+                <div class="logos-half-two">
+                    <a href="https://www.ciirc.cvut.cz/cs/" target="_blank" class="logo-nudz">
+                        <img class="logos cvut" src="images/logo-CIIRC.svg" />
+                    </a>
+                    <a href="https://www.tacr.cz/" target="_blank" class="logo-nudz">
+                        <img class="logos tacr" src="images/logo-tacr.png" />
+                    </a>
+                </div>
+                </div>
+                <div id="menu" class="menu">
+                    <nav>
+                        <li data-="#Home">Domů</li>
+                        <li data-="#Goals">Cíle</li>
+                        <li data-="#Aplications">VR aplikace</li>
+                        <li data-="#Outputs">Výstupy</li>
+                        <li data-="#Team">Náš tým</li>
+                        <li data-="#Terapeuts">Terapeuti</li>
+                        <li data-="#Contact">Kontakt</li>
+                        <li><a class="flag" href="en.html"><img src="images/kingdom_united_flag.png"></a></li>
+                    </nav>
+                    <a id="menuIcon" class="menu-icon">
+                        <img src="images/menu.svg" alt="">  
+                    </a>
+                </div>
+                
             </div>
-            <div id="menu" class="menu">
-                <nav>
-                    <li data-="#Home">Domů</li>
-                    <li data-="#Goals">Cíle</li>
-                    <li data-="#Aplications">VR aplikace</li>
-                    <li data-="#Outputs">Výstupy</li>
-                    <li data-="#Team">Náš tým</li>
-                    <li data-="#Terapeuts">Terapeuti</li>
-                    <li data-="#Contact">Kontakt</li>
-                    <li><a class="flag" href="en.html"><img src="images/kingdom_united_flag.png"></a></li>
-                </nav>     
-            </div>  
-        </div>
-        <div class="title-card" style="background-image: url(images/background_b.jpg)">
-            <h1>VRETcity</h1>
-            <p>aplikace ve virtuální realitě (VR) pro expoziční terapii osob s fobiemi</p>
-        </div>
+            <div id="menuCont" class="nav-exp-menu">
+                <nav id="menu">
+                     <li data-="#Goals">Cíle</li>
+                         <li data-="#Aplications">VR aplikace</li>
+                         <li data-="#Outputs">Výstupy</li>
+                         <li data-="#Team">Náš tým</li>
+                         <li data-="#Terapeuts">Terapeuti</li>
+                         <li data-="#Contact">Kontakt</li>
+                         <li><a class="flag" href="en.html"><img src="images/kingdom_united_flag.png"></a></li>
+                </nav>   
+            </div>
+            <div class="title-card" style="background-image: url(images/background_b.jpg)">
+                <h1>VRETcity</h1>
+                <p>aplikace ve virtuální realitě (VR) pro expoziční terapii osob s fobiemi</p>
+            </div>
     </header>
     <main>
         <section id="Goals" class="goals">
             <h2>Cíle projektu</h2>
             <div class="goals-main-text">
-                <p>Cílem tohoto projektu je tvorba aplikace ve virtuální realitě (VR) určeného pro expoziční terapii specifických fobií (např. strach z výšek, klaustrofobie nebo aviofobie), agorafobie nebo sociální fobie zasazeného do komplexního prostředí virtuálního velkoměsta. Prostředí města je vybráno proto, že symptomy pacientů s fobiemi jsou často vázány na situace typické pro prostředí města (např. strach z výšky, strach z cestování veřejnou hromadnou dopravou, strach z interakce s druhými lidmi atd). </p>
-                <p>Naše aplikace by měla sloužit zejména jako doplněk klasické kognitivně-behaviorální terapie (KBT). Využívá princip VR expoziční terapie (VRET), během které jsou klienti opakovaně a záměrně konfrontováni s obávanými podněty souvisejícími s danou fobií.</p>
-                <p>VRET terapie slouží zejména jako terapeutická pomůcka v přípravě klienta na expozice později prováděné v reálném prostoru a reálných situacích.</p>
+                <p>Cílem tohoto projektu je tvorba aplikace ve virtuální realitě (VR) určeného pro expoziční terapii
+                    specifických fobií (např. strach z výšek, klaustrofobie nebo aviofobie), agorafobie nebo sociální
+                    fobie zasazeného do komplexního prostředí virtuálního velkoměsta. Prostředí města je vybráno proto,
+                    že symptomy pacientů s fobiemi jsou často vázány na situace typické pro prostředí města (např.
+                    strach z výšky, strach z cestování veřejnou hromadnou dopravou, strach z interakce s druhými lidmi
+                    atd). </p>
+                <p>Naše aplikace by měla sloužit zejména jako doplněk klasické kognitivně-behaviorální terapie (KBT).
+                    Využívá princip VR expoziční terapie (VRET), během které jsou klienti opakovaně a záměrně
+                    konfrontováni s obávanými podněty souvisejícími s danou fobií.</p>
+                <p>VRET terapie slouží zejména jako terapeutická pomůcka v přípravě klienta na expozice později
+                    prováděné v reálném prostoru a reálných situacích.</p>
             </div>
             <div class="goals-grant-text">
-                <p>Projekt vzniká ve spolupráci Národního ústavu duševního zdraví s Českým institutem informatiky, robotiky a kybernetiky a Fakultou biomedicínského inženýrství ČVUT s finanční podporou programu ÉTA Technologické agentury ČR (TL03000223).</p>
+                <p>Projekt vzniká ve spolupráci Národního ústavu duševního zdraví s Českým institutem informatiky,
+                    robotiky a kybernetiky a Fakultou biomedicínského inženýrství ČVUT s finanční podporou programu ÉTA
+                    Technologické agentury ČR (TL03000223).</p>
             </div>
         </section>
         <section id="Aplications" class="aplications">
@@ -74,19 +110,19 @@
             <div class="stimulus-carousel-cont">
                 <div class="stimulus-carousel">
                     <div>
-                        <img src="images/MetroZastávka.png"/>
+                        <img src="images/MetroZastávka.png" />
                         <p>Metro</p>
                     </div>
                     <div>
-                        <img src="images/NemocniceOdběry.png"/>
+                        <img src="images/NemocniceOdběry.png" />
                         <p>Nemocnice</p>
                     </div>
                     <div>
-                        <img src="images/Letadlo.png"/>
+                        <img src="images/Letadlo.png" />
                         <p>Letiště</p>
                     </div>
                     <div>
-                        <img src="images/PohledStřecha.png"/>
+                        <img src="images/PohledStřecha.png" />
                         <p>Výšková budova</p>
                     </div>
                 </div>
@@ -95,74 +131,96 @@
             <div class="scenarios">
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/Most.png"/>
+                        <img src="images/Most.png" />
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
                             <h3>Akrofobie</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
+                            <img class="arrow" src="images/arrow_white.png" />
                         </div>
-                        <p>Hlavním prvkem expozičního scénáře navrženého pro osoby s akrofobií (strach z výšky) je střecha výškové budovy a prosklený výtah na boku budovy. Budova má celkem 84 pater, v každém z těchto pater je možné vystoupit z výtahu do prosklené chodby a vejít na malý balkon umístěný na konci chodby. V průběhu sezení se pracuje s dalšími nastavitelnými parametry, např. s výškou zábradlí.</p>
+                        <p>Hlavním prvkem expozičního scénáře navrženého pro osoby s akrofobií (strach z výšky) je
+                            střecha výškové budovy a prosklený výtah na boku budovy. Budova má celkem 84 pater, v každém
+                            z těchto pater je možné vystoupit z výtahu do prosklené chodby a vejít na malý balkon
+                            umístěný na konci chodby. V průběhu sezení se pracuje s dalšími nastavitelnými parametry,
+                            např. s výškou zábradlí.</p>
                     </div>
                 </div>
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/Kino.png"/>
+                        <img src="images/Kino.png" />
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
                             <h3>Sociální fobie</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
+                            <img class="arrow" src="images/arrow_white.png" />
                         </div>
-                        <p>Pro sociální fobii je určeno zejména prostředí kinosálu tvořeného promítacím plátnem a řadou sedaček. Scénář obsahuje nastavení jednotlivých úrovní obtížnosti, charakterizované zvyšujícím se počtem virtuálních postav, možnostmi usazení participanta a změnou reakcí publika.</p>
+                        <p>Pro sociální fobii je určeno zejména prostředí kinosálu tvořeného promítacím plátnem a řadou
+                            sedaček. Scénář obsahuje nastavení jednotlivých úrovní obtížnosti, charakterizované
+                            zvyšujícím se počtem virtuálních postav, možnostmi usazení participanta a změnou reakcí
+                            publika.</p>
                     </div>
                 </div>
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/MetroJízda.png"/>
+                        <img src="images/MetroJízda.png" />
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
                             <h3>Agorafobie</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
+                            <img class="arrow" src="images/arrow_white.png" />
                         </div>
-                        <p>Hlavním prostředím určeným pro osoby s agorafobií je systém metra. Metro obsahuje několik zastávek, kterými vagon projíždí a umožňuje uživateli vystoupit a pohybovat se v prostředí nástupišť. Přestupy jsou označené tak, aby se uživatel mohl sám ve scéně orientovat. Pro stupňování obtížnosti scénáře je možné zvyšovat počet virtuálních postav v okolí uživatele nebo spouštět nečekané stresové situace (např. zaseknutí metra).</p>
+                        <p>Hlavním prostředím určeným pro osoby s agorafobií je systém metra. Metro obsahuje několik
+                            zastávek, kterými vagon projíždí a umožňuje uživateli vystoupit a pohybovat se v prostředí
+                            nástupišť. Přestupy jsou označené tak, aby se uživatel mohl sám ve scéně orientovat. Pro
+                            stupňování obtížnosti scénáře je možné zvyšovat počet virtuálních postav v okolí uživatele
+                            nebo spouštět nečekané stresové situace (např. zaseknutí metra).</p>
                     </div>
                 </div>
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/Letiste.png"/>
+                        <img src="images/Letiste.png" />
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
                             <h3>Aviofobie</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
+                            <img class="arrow" src="images/arrow_white.png" />
                         </div>
-                        <p>Pro strach z létání bylo navrženo prostředí letiště, na které je možné dojet metrem. Letiště obsahuje dvě patra - první patro slouží k odbavení, druhé patro je dostupné prostřednictvím eskalátorů a zahrnuje bezpečnostní kontrolu, čekání před vstupem do letadla a interiér letadla. Scénář navazuje odletem letadla, který je spojené s animací změny lokace letadla a následnou možností přistání. Je možné zvolit různé stresující situace týkající se např. turbulencí nebo hlášení pilota.</p>
+                        <p>Pro strach z létání bylo navrženo prostředí letiště, na které je možné dojet metrem. Letiště
+                            obsahuje dvě patra - první patro slouží k odbavení, druhé patro je dostupné prostřednictvím
+                            eskalátorů a zahrnuje bezpečnostní kontrolu, čekání před vstupem do letadla a interiér
+                            letadla. Scénář navazuje odletem letadla, který je spojené s animací změny lokace letadla a
+                            následnou možností přistání. Je možné zvolit různé stresující situace týkající se např.
+                            turbulencí nebo hlášení pilota.</p>
                     </div>
                 </div>
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/vvtah.jpg"/>
+                        <img src="images/vvtah.jpg" />
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
                             <h3>Klaustrofobie</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
+                            <img class="arrow" src="images/arrow_white.png" />
                         </div>
-                        <p>Hlavním prvkem expozičního scénáře navrženého pro osoby s klaustrofobií je výtah. Výšková budova obsahuje několik výtahů různého typu a velikosti, spojených s vizuálními i sluchovými podněty a možností prezentace poruchových situací. Dalším prostředím pro osoby s klaustrofobií jsou podzemní garáže, některá patra jsou dostupná pouze výtahem. </p>
+                        <p>Hlavním prvkem expozičního scénáře navrženého pro osoby s klaustrofobií je výtah. Výšková
+                            budova obsahuje několik výtahů různého typu a velikosti, spojených s vizuálními i sluchovými
+                            podněty a možností prezentace poruchových situací. Dalším prostředím pro osoby s
+                            klaustrofobií jsou podzemní garáže, některá patra jsou dostupná pouze výtahem. </p>
                     </div>
                 </div>
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/Nemocnice.png"/>
+                        <img src="images/Nemocnice.png" />
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
                             <h3>Fobie z nákazy a zdravotnických zařízení</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
+                            <img class="arrow" src="images/arrow_white.png" />
                         </div>
-                        <p>Pro strach ze zdravotnických zařízení a procedur je určeno prostředí nemocnice, obsahující recepci a různá oddělení (vč. odběrů krve nebo zubaře). V prostorech recepce se vyskytuje zdravotnický personál i ostatní návštěvníci budovy, prostředí obsahuje i další prvky související s nemocnicí a nákazou, např. odložené zkumavky nebo znečištěné toalety.</p>
+                        <p>Pro strach ze zdravotnických zařízení a procedur je určeno prostředí nemocnice, obsahující
+                            recepci a různá oddělení (vč. odběrů krve nebo zubaře). V prostorech recepce se vyskytuje
+                            zdravotnický personál i ostatní návštěvníci budovy, prostředí obsahuje i další prvky
+                            související s nemocnicí a nákazou, např. odložené zkumavky nebo znečištěné toalety.</p>
                     </div>
                 </div>
             </div>
@@ -171,42 +229,42 @@
             <h2>Náš tým</h2>
             <div class="team-cont">
                 <a href="https://brainvr.cz/iveta-fejnarova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/iveta-fejnarova-thumbnail.jpg"/>
+                    <img class="member-thumbnail" src="images/iveta-fejnarova-thumbnail.jpg" />
                     <p class="member-name">Iveta Fajnerová</p>
                     <p class="member-role">vedoucí projektu</p>
                 </a>
                 <a href="https://brainvr.cz/anna-francova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/anna-francova-thumbnail.jpg"/>
+                    <img class="member-thumbnail" src="images/anna-francova-thumbnail.jpg" />
                     <p class="member-name">Anna Francová</p>
                     <p class="member-role">psycholog, výzkum</p>
                 </a>
                 <a href="https://brainvr.cz/marketa-jablonska" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/marketa-jablonska-thumbnail.jpg"/>
+                    <img class="member-thumbnail" src="images/marketa-jablonska-thumbnail.jpg" />
                     <p class="member-name">Markéta Jablonská</p>
                     <p class="member-role">terapeut, výzkum</p>
                 </a>
                 <a href="https://brainvr.cz/jirina-kosova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/kosovav4.png"/>
+                    <img class="member-thumbnail" src="images/kosovav4.png" />
                     <p class="member-name">Jiřina Kosová</p>
                     <p class="member-role">psychiatr</p>
                 </a>
                 <a href="https://brainvr.cz/pavla-stopkova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/pavla-stopkova-thumbnail.jpg"/>
+                    <img class="member-thumbnail" src="images/pavla-stopkova-thumbnail.jpg" />
                     <p class="member-name">Pavla Stopková</p>
                     <p class="member-role">psychiatr</p>
                 </a>
                 <a href="https://brainvr.cz/maria-figurova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/maria-figurova-thumbnail.jpg"/>
+                    <img class="member-thumbnail" src="images/maria-figurova-thumbnail.jpg" />
                     <p class="member-name">Mária Figurová</p>
                     <p class="member-role">terapeut</p>
                 </a>
                 <a class="member">
-                    <img class="member-thumbnail" src="images/martin-kotek-thumbnail.jpg"/>
+                    <img class="member-thumbnail" src="images/martin-kotek-thumbnail.jpg" />
                     <p class="member-name">Martin Kotek</p>
                     <p class="member-role">vývojář (ČVUT)</p>
                 </a>
                 <a class="member">
-                    <img class="member-thumbnail" src="images/jan-husak-thumbnail.jpg"/>
+                    <img class="member-thumbnail" src="images/jan-husak-thumbnail.jpg" />
                     <p class="member-name">Jan Husák</p>
                     <p class="member-role">vývojář (ČVUT)</p>
                 </a>
@@ -248,8 +306,9 @@
                 <label for="comment">Poznámka</label>
                 <textarea name="comment"></textarea>
                 <div class="pi-cont">
-                    <input type="checkbox" name="pi" value="pi" required/>
-                    <label for="checkbox">Souhlasím se zpracováním osobních údajů<span class="requiredAsterix">*</span></label>
+                    <input type="checkbox" name="pi" value="pi" required />
+                    <label for="checkbox">Souhlasím se zpracováním osobních údajů<span
+                            class="requiredAsterix">*</span></label>
                 </div>
 
                 <input class="form-submit" type="submit" value="Poslat">
@@ -257,43 +316,49 @@
             <div id="registrationComplete" class="registraion-complete">
                 <p>Děkujeme za Váš zájem.</p>
                 <p>Odpovědná osoba z našeho týmu se Vám na uvedený kontakt ozve co nejdříve to bude možné.</p>
-            </dib>
+                </dib>
         </section>
         <section id="Outputs" class="outputs">
             <h2>Výstupy</h2>
             <div class="outputs-subcategory">
                 <a id="aplOutputsButton" class="subcategory-header">
                     <h3>Publikace</h3>
-                    <img class="arrow" src="images/arrow.png"/>
-                </div>
-                <div id="aplOutputsText" class="subcategory-list">
-                    <a href="https://direct.mit.edu/pvar/article-abstract/doi/10.1162/pres_a_00385/116316/Design-and-Evaluation-of-Virtual-Reality?redirectedFrom=fulltext" target="_blank" class="publications">
-                        <p class="publication-name">Design and Evaluation of Virtual Reality Environments for Claustrophobia</p>
-                        <p class="publication-header">Francová A, Jablonská M, Fajnerová I (2023)</p>
-                    </a>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9538712/authors#authors" target="_blank" class="publications">
-                        <p class="publication-name">Virtual Reality for Exposure Therapy</p>
-                        <p class="publication-header">Lhotska L, Kutilek P, Husak J, Francova A, Hejda J, Stejskal J, et al. (2021)</p>
-                    </a>
-                </div>
+                    <img class="arrow" src="images/arrow.png" />
+            </div>
+            <div id="aplOutputsText" class="subcategory-list">
+                <a href="https://direct.mit.edu/pvar/article-abstract/doi/10.1162/pres_a_00385/116316/Design-and-Evaluation-of-Virtual-Reality?redirectedFrom=fulltext"
+                    target="_blank" class="publications">
+                    <p class="publication-name">Design and Evaluation of Virtual Reality Environments for Claustrophobia
+                    </p>
+                    <p class="publication-header">Francová A, Jablonská M, Fajnerová I (2023)</p>
+                </a>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9538712/authors#authors" target="_blank"
+                    class="publications">
+                    <p class="publication-name">Virtual Reality for Exposure Therapy</p>
+                    <p class="publication-header">Lhotska L, Kutilek P, Husak J, Francova A, Hejda J, Stejskal J, et al.
+                        (2021)</p>
+                </a>
+            </div>
             </div>
 
 
             <div class="outputs-subcategory">
                 <a id="toolsButton" class="subcategory-header">
                     <h3>Nástroje</h3>
-                    <img class="arrow" src="images/arrow.png"/>
-                </div>
-                <div id="toolsText" class="subcategory-list">
-                    <a href="documents/VRETcity-SW2023.pdf" target="_blank" class="publications">
-                        <p class="publication-name">VRETcity</p>
-                        <p class="publication-header">Fajnerová I, Francová A, Jablonská M K, Husák J, Stejskal J, Kotek M (2023)</p>
-                    </a>
-                    <a href="documents/VRETcity-fyzioSW2023.pdf" target="_blank" class="publications">
-                        <p class="publication-name">Aplikace BBPM pro hodnocení kognitivní zátěže (Application for cognitive load assessment)</p>
-                        <p class="publication-header">Hejda J, Sokol M, Kutílek P, Francová A, Fajnerová I (2023)</p>
-                    </a>
-                </div>
+                    <img class="arrow" src="images/arrow.png" />
+            </div>
+            <div id="toolsText" class="subcategory-list">
+                <a href="documents/VRETcity-SW2023.pdf" target="_blank" class="publications">
+                    <p class="publication-name">VRETcity</p>
+                    <p class="publication-header">Fajnerová I, Francová A, Jablonská M K, Husák J, Stejskal J, Kotek M
+                        (2023)</p>
+                </a>
+                <a href="documents/VRETcity-fyzioSW2023.pdf" target="_blank" class="publications">
+                    <p class="publication-name">Aplikace BBPM pro hodnocení kognitivní zátěže (Application for cognitive
+                        load assessment)</p>
+                    <p class="publication-header">Hejda J, Sokol M, Kutílek P, Francová A, Fajnerová I (2023)</p>
+                </a>
+            </div>
             </div>
 
 
@@ -309,16 +374,16 @@
     <footer>
         <div class="top-footer">
             <a href="https://brainvr.cz/" target="_blank" class="logo-brainvr">
-                <img  src="images/logo-brainvr.png"/>
+                <img src="images/logo-brainvr.png" />
             </a>
             <a href="https://www.nudz.cz/" target="_blank" class="logo-nudz">
-                <img  src="images/logo-nudz.png"/>
+                <img src="images/logo-nudz.png" />
             </a>
             <a href="https://www.cvut.cz/" target="_blank" class="logo-cvut">
-                <img class="logos cvut" src="images/logo-CIIRC.svg"/>
+                <img class="logos cvut" src="images/logo-CIIRC.svg" />
             </a>
             <a href="https://www.tacr.cz/" target="_blank" class="logo-tacr">
-                <img class="logos tacr" src="images/logo-tacr.png"/>
+                <img class="logos tacr" src="images/logo-tacr.png" />
             </a>
         </div>
 
@@ -329,36 +394,48 @@
     </footer>
 
     <script>
-        $(document).ready(function(){
-             	
+        $(document).ready(function () {
 
-            $( "#aplOutputsButton" ).on( "click", function() {
-                $( "#aplOutputsText" ).slideToggle( "slow", function() {
-                    $( "#aplOutputsButton > img").toggleClass( "rotated" )
+
+            $("#aplOutputsButton").on("click", function () {
+                $("#aplOutputsText").slideToggle("slow", function () {
+                    $("#aplOutputsButton > img").toggleClass("rotated")
                 });
             });
 
-            $( "#toolsButton" ).on( "click", function() {
-                $( "#toolsText" ).slideToggle( "slow", function() {
-                    $( "#aplOutputsButton > img").toggleClass( "rotated" )
+            $("#toolsButton").on("click", function () {
+                $("#toolsText").slideToggle("slow", function () {
+                    $("#aplOutputsButton > img").toggleClass("rotated")
                 });
             });
 
-            $( ".scenario-cont" ).on( "click", function() {
-                $(this).find(".text-cont > p").slideToggle("slow", function() {
-                    $(this).parent().find(".arrow").toggleClass( "rotated" );
+            $(".scenario-cont").on("click", function () {
+                $(this).find(".text-cont > p").slideToggle("slow", function () {
+                    $(this).parent().find(".arrow").toggleClass("rotated");
                 });
             });
 
-            
+
 
             $('.stimulus-carousel').slick({
                 dots: true,
                 speed: 300,
                 slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
             });
 
-            $("#menu li").click(function() {
+            $("#menuIcon").click(function() {
+                $("#menuCont").slideToggle("medium");
+            })
+
+            $("#menu li").click(function () {
                 $("html, body").animate({ scrollTop: $("" + $(this).data()[""]).offset().top }, 300);
             });
 
@@ -372,7 +449,7 @@
                 });
             });*/
 
-            $("#formShow").click(function() {
+            $("#formShow").click(function () {
                 $("#formShow").hide();
                 //$("#formInfo").hide();
                 $("#registraionForm").show();
@@ -383,27 +460,28 @@
 
                 const myForm = event.target;
                 const formData = new FormData(myForm);
-  
+
                 fetch("/", {
                     method: "POST",
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     body: new URLSearchParams(formData).toString(),
                 })
-                .then(() => {
-                    $("#registraionForm").hide();
-                    $("#registrationComplete").show();
-                    $("html, body").animate({ scrollTop: $("#Terapeuts").offset().top }, 300);
-                    
-                })
-                .catch((error) => alert(error));
+                    .then(() => {
+                        $("#registraionForm").hide();
+                        $("#registrationComplete").show();
+                        $("html, body").animate({ scrollTop: $("#Terapeuts").offset().top }, 300);
+
+                    })
+                    .catch((error) => alert(error));
             };
 
             document
                 .querySelector("form")
-                .addEventListener("submit", handleSubmit);      
-            
+                .addEventListener("submit", handleSubmit);
+
         });
-        
+
     </script>
 </body>
+
 </html>

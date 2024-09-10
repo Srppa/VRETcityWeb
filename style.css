@@ -67,6 +67,27 @@ header .nav-bar .logos{
     
 }
 
+.nav-exp-menu{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon > img{
+    width: 55px;
+    margin-bottom: -5px;
+
+}
+
+header .logos > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 header .nav-bar .logos > a{
     margin-left: 13px;
@@ -105,10 +126,44 @@ header .nav-bar .logos > a{
     cursor: pointer;
 }
 
+.nav-exp-menu{
+    display: none;
+    margin-top: -8px;
+    margin-right: 20px;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+
+.nav-exp-menu > nav{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #2C3161;
+
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.nav-exp-menu > nav > li {
+    list-style: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.nav-exp-menu > nav > li:first-child{
+    margin-top: 0px;
+}
+
+
 .title-card{
     width: 100%;
 
-    padding: 190px 0;
+    padding: 190px 10px;
+    box-sizing: border-box;
 
     background-size: cover;
 
@@ -561,4 +616,74 @@ footer{
     -moz-transform: rotate(180deg); /* Firefox */
     -webkit-transform: rotate(180deg); /* Safari and Chrome */
     -o-transform: rotate(180deg); /* Opera */
+}
+
+@media screen and (max-width: 900px) {
+    .scenarios {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 450px;
+        margin: auto;
+    }
+
+    .scenario-cont{
+        width: 100%;
+    }
+
+    .stimulus-carousel-cont{
+        max-width: 350px;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .team-cont {
+        max-width: 370px;
+        margin: auto;
+    }
+
+    .member{
+        width: 50%;
+    }
+
+    .goals-main-text{
+        text-align: justify;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .goals-grant-text{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 1110px) {
+    .menu > nav{
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:  560px) {
+    header .nav-bar .logos{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logos-half-two{
+        margin-top: 10px;
+    }
+
+    .logos-half-two > a:first-of-type{
+        margin-left: 0;
+    }
+    
 }
