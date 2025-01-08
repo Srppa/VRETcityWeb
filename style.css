@@ -687,3 +687,24 @@ footer{
     }
     
 }
+
+.additions{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 15px;
+    color: #2C3161;
+    text-decoration: underline;
+}
+
+.additions a:visited {     
+    background-color: #2C3161;    
+}
+
+.additions a{
+    margin-top: 15px;
+}
+
+.additions a:first-of-type{
+    margin-top: 0;
+}
