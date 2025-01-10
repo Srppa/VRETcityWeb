@@ -698,11 +698,12 @@ footer{
 }
 
 .additions a:visited {     
-    background-color: #2C3161;    
+    background-color: #2C3161 !important;    
 }
 
 .additions a{
     margin-top: 15px;
+    color: #2C3161 !important;
 }
 
 .additions a:first-of-type{
